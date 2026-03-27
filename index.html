@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodHub - Seu App de Comida</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-emoji">🍽️</span>
+                <h1>FoodHub</h1>
+            </div>
+            <nav class="nav-header">
+                <span class="location">📍 São Paulo, SP</span>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Search Bar -->
+    <section class="search-section">
+        <div class="container">
+            <div class="search-bar">
+                <input type="text" placeholder="Busque por restaurante ou comida..." class="search-input">
+                <button class="search-btn">🔍</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Navigation -->
+    <section class="categories">
+        <div class="container">
+            <div class="categories-scroll">
+                <button class="category-btn active" data-category="sushi">
+                    <span class="category-icon">🍣</span>
+                    <span>Sushi</span>
+                </button>
+                <button class="category-btn" data-category="pizza">
+                    <span class="category-icon">🍕</span>
+                    <span>Pizza</span>
+                </button>
+                <button class="category-btn" data-category="docinho">
+                    <span class="category-icon">💋</span>
+                    <span>Seu Docinho</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Sushi Section -->
+            <section id="sushi" class="category-section active">
+                <h2 class="section-title">🍣 Restaurantes de Sushi</h2>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image sushi-1">
+                            <span class="badge">⭐ 4.9</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Sakura Sushi Express</h3>
+                            <p class="description">Sushi fresco e autentico</p>
+                            <div class="product-meta">
+                                <span class="time">⏱️ 25-35 min</span>
+                                <span class="price">💰 R$ 40-80</span>
+                            </div>
+                            <button class="btn-order">Pedir Agora</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image sushi-2">
+                            <span class="badge">⭐ 4.7</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Tóquio Sushi</h3>
+                            <p class="description">Sushi premium e combinados</p>
+                            <div class="product-meta">
+                                <span class="time">⏱️ 30-40 min</span>
+                                <span class="price">💰 R$ 50-100</span>
+                            </div>
+                            <button class="btn-order">Pedir Agora</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image sushi-3">
+                            <span class="badge">⭐ 4.8</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Wasabi House</h3>
+                            <p class="description">Sushi gourmet e drinks</p>
+                            <div class="product-meta">
+                                <span class="time">⏱️ 35-45 min</span>
+                                <span class="price">💰 R$ 60-120</span>
+                            </div>
+                            <button class="btn-order">Pedir Agora</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image sushi-4">
+                            <span class="badge">⭐ 4.6</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Maki Express</h3>
+                            <p class="description">Sushi rápido e delicioso</p>
+                            <div class="product-meta">
+                                <span class="time">⏱️ 20-30 min</span>
+                                <span class="price">💰 R$ 35-70</span>
+                            </div>
+                            <button class="btn-order">Pedir Agora</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Pizza Section -->
+            <section id="pizza" class="category-section">
+                <h2 class="section-title">🍕 Pizzarias</h2>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image pizza-1">
+                            <span class="badge">⭐ 4.9</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Napoli Pizzeria</h3>
+                            <p class="description">Pizza italiana autêntica</p>
+                            <div class="product-meta">
+                                <span class="time">⏱️ 30-40 min</span>
+                                <span class="price">💰 R$ 45-90</span>
+                            </div>
+                            <button class="btn-order">Pedir Agora</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image pizza-2">
+                            <span class="badge">⭐ 4.8</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Forno de Barro</h3>
+                            <p class="description">Pizza artesanal na brasa</p>
+                            <div class="product-meta">
+                                <span class="time">⏱️ 35-45 min</span>
+                                <span class="price">💰 R$ 50-100</span>
+                            </div>
+                            <button class="btn-order">Pedir Agora</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image pizza-3">
+                            <span class="badge">⭐ 4.7</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Slice Delivery</h3>
+                            <p class="description">Pizza por fatia e inteira</p>
+                            <div class="product-meta">
+                                <span class="time">⏱️ 20-30 min</span>
+                                <span class="price">💰 R$ 30-60</span>
+                            </div>
+                            <button class="btn-order">Pedir Agora</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image pizza-4">
+                            <span class="badge">⭐ 4.9</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Pizzaria Gourmet</h3>
+                            <p class="description">Pizzas premium e especiais</p>
+                            <div class="product-meta">
+                                <span class="time">⏱️ 40-50 min</span>
+                                <span class="price">💰 R$ 60-150</span>
+                            </div>
+                            <button class="btn-order">Pedir Agora</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Seu Docinho Section (Special) -->
+            <section id="docinho" class="category-section docinho-section">
+                <h2 class="section-title">💋 Seu Docinho</h2>
+                <div class="docinho-container">
+                    <div class="docinho-card">
+                        <div class="docinho-image">
+                            <span class="large-emoji">😘</span>
+                        </div>
+                        <div class="docinho-info">
+                            <h3>Seu Docinho Especial</h3>
+                            <p class="docinho-description">Aquele seu docinho que é tão fofo quando você quer...</p>
+                            <div class="docinho-features">
+                                <div class="feature">
+                                    <span class="feature-icon">😍</span>
+                                    <span>Sempre doçura</span>
+                                </div>
+                                <div class="feature">
+                                    <span class="feature-icon">🥰</span>
+                                    <span>Muito amoroso</span>
+                                </div>
+                                <div class="feature">
+                                    <span class="feature-icon">💕</span>
+                                    <span>Coração meu</span>
+                                </div>
+                                <div class="feature">
+                                    <span class="feature-icon">😂</span>
+                                    <span>Zoador demais</span>
+                                </div>
+                            </div>
+                            <div class="docinho-price">
+                                <p>Preço: Seu Amor ❤️ (Não tem preço!)</p>
+                                <div class="rating">⭐⭐⭐⭐⭐ 5.0</div>
+                            </div>
+                            <button class="btn-order docinho-btn">👉 Chamar Agora</button>
+                        </div>
+                    </div>
+
+                    <div class="docinho-messages">
+                        <h3>últimas avaliações:</h3>
+                        <div class="message-item">
+                            <span class="message-author">Você:</span>
+                            <p>"Meu docinho favorito 💕"</p>
+                        </div>
+                        <div class="message-item">
+                            <span class="message-author">Ele:</span>
+                            <p>"Você é meu açúcar... (e meu sal tbm 😂)"</p>
+                        </div>
+                        <div class="message-item">
+                            <span class="message-author">Você:</span>
+                            <p>"Só vou pedir mais vezes 😏"</p>
+                        </div>
+                        <div class="message-item">
+                            <span class="message-author">Ele:</span>
+                            <p>"ué, não era pra zoar só você? 🤔"</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 FoodHub - Seu App de Comida Favorito 🍽️</p>
+            <div class="footer-links">
+                <a href="#">Sobre</a>
+                <a href="#">Contato</a>
+                <a href="#">Termos</a>
+                <a href="#">Privacidade</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
